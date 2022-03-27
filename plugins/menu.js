@@ -169,7 +169,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": ` ᴅᴇᴠᴀɴꜱᴇʀ  ʙʏ ᴋʀɪꜱʜɴᴀᴅᴇᴠ,
-┌─────❲ *ᴀʀᴊᴜɴsᴇʀ * ❳
+┌─────❲ *ᴅᴇᴠᴀɴ ꜱᴇʀ * ❳
 ┊
 └─────────────────❋ཻུ۪۪⸙
         
@@ -184,7 +184,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┊☞ 🧭 *TIME* : ${time},
 ┊☞ 💫 *WEEK* : ${week},
 ┊☞ ✅ *DATE* : ${date},
-┊☞ 💝 *OWNER* : wa.me/8547411641
+┊☞ 💝 *OWNER* : wa.me/918547411641
 ┊☞ 🖌️ *PREFIX* : ᴍᴜʟᴛɪ ᴘʀᴇғɪx 
 ┊☞ ☮️ *BOT NAME* :  𝙳𝙴𝚅𝙰𝙽 𝚂𝙴𝚁
 └─────────────────⸙ \n\ ______`
@@ -198,7 +198,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
               "rows": [
                 {
                   "title": `DEVAN SER`,
-                  "description": "Arjun Ser git link",
+                  "description": "Devan Ser git link",
                   "rowId": ".git"
                 }, {
                   "title": "💻Game",
@@ -365,13 +365,13 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch("https://telegra.ph/file/9b98520c4158403cda881.jpg")).buffer(), text.trim(), '© ᴀʀᴊᴜɴsᴇʀ  ©', 'Owner Bot', ',owner', 'All Commands', '.? all', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch("https://i.imgur.com/uhBBmdw.jpeg")).buffer(), text.trim(), '© ᴅᴇᴠᴀɴꜱᴇʀ  ©', 'Owner Bot', ',owner', 'All Commands', '.? all', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, Try Again', m)
     throw e
   }
 }
-handler.help = ['menu', 'help','list','Arjunser', '?']
+handler.help = ['menu', 'help','list','devanser', '?']
 handler.tags = ['main']
 handler.command = /^(listt|\?)$/i
 handler.owner = false
